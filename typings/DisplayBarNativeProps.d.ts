@@ -16,6 +16,9 @@ export interface DisplayBarNativeProps<Style> {
     lowDynamicVal?: EditableValue<Big>;
     highDynamicVal?: EditableValue<Big>;
     color: DynamicValue<string>;
+    height: number;
+    borderRadius: number;
+    animationDuration: number;
 }
 
 export interface DisplayBarNativePreviewProps {
@@ -29,4 +32,7 @@ export interface DisplayBarNativePreviewProps {
     lowDynamicVal: string;
     highDynamicVal: string;
     color: string;
+    height: number | null;
+    borderRadius: number | null;
+    animationDuration: number | null;
 }

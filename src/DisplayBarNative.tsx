@@ -20,7 +20,7 @@ export function DisplayBarNative(props: DisplayBarNativeProps<CustomStyle>): Rea
 
     Animated.timing(widthAnim, {
         toValue: newWidth,
-        duration: 1000,
+        duration: props.animationDuration,
         useNativeDriver: false
     }).start();
 
@@ -28,7 +28,7 @@ export function DisplayBarNative(props: DisplayBarNativeProps<CustomStyle>): Rea
         <View
             style={{
                 flexDirection: "row",
-                height: 20,
+                height: props.height,
                 flex: 1,
                 margin: 10
             }}
@@ -37,7 +37,7 @@ export function DisplayBarNative(props: DisplayBarNativeProps<CustomStyle>): Rea
                 style={[
                     {
                         backgroundColor: props.color.value,
-                        borderRadius: 10
+                        borderRadius: props.borderRadius
                     },
                     {
                         flex: widthAnim

@@ -14,43 +14,59 @@
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="value" type="attribute">
-                <caption>Value</caption>
-                <description />
-                <attributeTypes>
-                    <attributeType name="Decimal" />
-                    <attributeType name="Integer" />
-                </attributeTypes>
-            </property>
-            <property key="lowVal" type="decimal" defaultValue="0">
-                <caption>Lower Bound</caption>
-                <description />
-            </property>
-            <property key="highVal" type="decimal" defaultValue="100">
-                <caption>Upper Bound</caption>
-                <description />
-            </property>
-            <property key="lowDynamicVal" type="attribute" required="false">
-                <caption>Lower Bound</caption>
-                <description />
-                <attributeTypes>
-                    <attributeType name="Decimal" />
-                    <attributeType name="Integer" />
-                </attributeTypes>
-            </property>
-            <property key="highDynamicVal" type="attribute" required="false">
-                <caption>Upper Bound</caption>
-                <description />
-                <attributeTypes>
-                    <attributeType name="Decimal" />
-                    <attributeType name="Integer" />
-                </attributeTypes>
-            </property>
-            <property key="color" type="expression" defaultValue="'red'">
-                <caption>Color</caption>
-                <description>Bar color</description>
-                <returnType type="String" />
-            </property>
+            <propertyGroup caption="Data source">
+                <property key="value" type="attribute">
+                    <caption>Value</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                        <attributeType name="Integer" />
+                    </attributeTypes>
+                </property>
+                <property key="lowVal" type="decimal" defaultValue="0">
+                    <caption>Lower Bound</caption>
+                    <description />
+                </property>
+                <property key="highVal" type="decimal" defaultValue="100">
+                    <caption>Upper Bound</caption>
+                    <description />
+                </property>
+                <property key="lowDynamicVal" type="attribute" required="false">
+                    <caption>Lower Bound</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                        <attributeType name="Integer" />
+                    </attributeTypes>
+                </property>
+                <property key="highDynamicVal" type="attribute" required="false">
+                    <caption>Upper Bound</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                        <attributeType name="Integer" />
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Visual">
+                <property key="color" type="expression" defaultValue="'red'">
+                    <caption>Bar Color</caption>
+                    <description />
+                    <returnType type="String" />
+                </property>
+                <property key="height" type="integer" defaultValue="16">
+                    <caption>Bar height</caption>
+                    <description />
+                </property>
+                <property key="borderRadius" type="integer" defaultValue="8">
+                    <caption>Bar border radius</caption>
+                    <description />
+                </property>
+                <property key="animationDuration" type="integer" defaultValue="1000">
+                    <caption>Bar animation length</caption>
+                    <description />
+                </property>
+            </propertyGroup>
         </propertyGroup>
     </properties>
 </widget>
