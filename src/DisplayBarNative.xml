@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.displaybarnative.DisplayBarNative"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Display Bar Native</name>
+    <description>Display Bar Native</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="value" type="attribute">
+                <caption>Value</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="lowVal" type="decimal" defaultValue="0">
+                <caption>Lower Bound</caption>
+                <description />
+            </property>
+            <property key="highVal" type="decimal" defaultValue="100">
+                <caption>Upper Bound</caption>
+                <description />
+            </property>
+            <property key="lowDynamicVal" type="attribute" required="false">
+                <caption>Lower Bound</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="highDynamicVal" type="attribute" required="false">
+                <caption>Upper Bound</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="color" type="expression" defaultValue="'red'">
+                <caption>Color</caption>
+                <description>Bar color</description>
+                <returnType type="String" />
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
